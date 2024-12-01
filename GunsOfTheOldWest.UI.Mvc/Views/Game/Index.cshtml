@@ -1,0 +1,16 @@
+﻿@model GameState
+@{
+	ViewData["Title"] = "Play";
+}
+
+<div class="text-center">
+	<h1>Guns of the Old West</h1>
+	<form asp-action="Shoot" method="post">
+		<p class="smallFont">getal</p>
+		<p id="shot">@Model.NumberShot</p>
+		<p class="smallFont">geschoten</p>
+		<button type="submit" class="shoot-button">Shoot</button>
+	</form>
+	<p class="bulletsLeft">Nog @Model.BulletsLeft kogels</p>
+</div>
+

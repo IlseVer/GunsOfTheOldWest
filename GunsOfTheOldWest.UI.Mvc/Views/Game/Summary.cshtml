@@ -1,0 +1,20 @@
+﻿@model Player
+@{
+	ViewData["Title"] = "Summary";
+}
+<div class="summary-container">
+	<h2>Samenvatting</h2>
+	<div class="summary">
+		<div class="summary-details"></div>
+		<p><span>Voornaam:</span> @Model.FirstName</p>
+		<p><span>Familienaam:</span> @Model.LastName</p>
+		<p><span>Email:</span> @Model.Email</p>
+		<p><span>Telefoon:</span> @Model.PhoneNumber</p>
+		<p><span>Datum:</span> @Model.SubmissionDate.ToString("dd/MM/yyyy HH:mm")</p>
+	</div>
+	<div class="author">
+		<h3>Over de auteur</h3>
+		<p>Ilse Verhaeghe - <span>student Toegepaste Informatica</span></p>
+	</div>
+	<a asp-action="Index" class="btn btn-secondary btns">Terug naar game</a>
+</div>

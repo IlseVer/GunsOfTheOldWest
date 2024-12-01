@@ -1,0 +1,31 @@
+﻿@model Player
+@{
+	ViewData["Title"] = "Winner";
+}
+<div class="shutter">
+	<h2>Scherpschutter!</h2>
+	<form asp-action="SubmitWinner" method="post">
+		<div class="form-group">
+			<label asp-for="FirstName">Voornaam:</label>
+			<input asp-for="FirstName" class="form-control"/>
+			<span asp-validation-for="FirstName" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="LastName">Familienaam:</label>
+			<input asp-for="LastName" class="form-control"/>
+			<span asp-validation-for="LastName" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Email">E-mailadres:</label>
+			<input asp-for="Email" class="form-control"/>
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="PhoneNumber">Telefoonnummer:</label>
+			<input asp-for="PhoneNumber" class="form-control"/>
+			<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary btns">Versturen</button>
+	</form>
+	<a asp-action="Index" class="btn btn-secondary btns">Terug naar game</a>
+</div>

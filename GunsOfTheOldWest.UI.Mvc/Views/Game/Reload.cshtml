@@ -1,0 +1,17 @@
+﻿@{
+	ViewData["Title"] = "Reload";
+}
+<div class="reload-buttons">
+	<form asp-action="BuyBullets" method="post">
+		<input type="hidden" name="amount" value="2" />
+		<button type="submit">Koop 2 kogels voor €1</button>
+	</form>
+	<form asp-action="BuyBullets" method="post">
+		<input type="hidden" name="amount" value="7" />
+		<button type="submit">Koop 7 kogels voor €4</button>
+	</form>
+	<form asp-action="BuyBullets" method="post">
+		<input type="hidden" name="amount" value="12" />
+		<button type="submit">Koop 12 kogels voor €7</button>
+	</form>
+</div>

@@ -1,0 +1,127 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #e0e0e0, #ff430066);
+    margin-bottom: 60px;
+    padding: 0;
+    height: 100%;
+}
+
+@media (min-width: 769px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.shoot-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #444;
+    background-color: silver;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.reload-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    align-items:center;
+}
+.reload-buttons button{
+   width:244px;
+}
+@media (max-width: 768px) {
+    .reload-buttons {
+        flex-direction: column;
+    }
+}
+
+.reload-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: 5px solid #444;
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+.bulletsLeft{
+    font-weight:bold;
+}
+.btns {
+    margin-top: 5px;
+}
+
+#shot {
+    color: blue;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+}
+
+.smallFont {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.summary-container, .shutter {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.summary p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.summary p span{
+    font-weight: bolder;
+}
+
+.author {
+    margin-top:20px;
+    margin-bottom:10px;
+    background-color: #e9ecef;
+    color:dimgrey;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.author h3{
+    font-size: 1.0em;
+}
+
+.author p{
+    padding: 0px;
+    margin:0px;
+    font-size:0.8em;
+}
+
+.author span{
+    font-style:italic
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
